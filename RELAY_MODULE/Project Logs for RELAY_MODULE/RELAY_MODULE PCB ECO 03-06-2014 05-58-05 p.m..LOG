@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=CTRL_SIGNAL Pin=P1-1
+Removed Pin From Net: NetName=GND Pin=P1-3
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=CTRL_SIGNAL Pin=P1-3
+Added Member To Class: ClassName=RELAY_MODULE Member=Component M2 MountingHole-1/8in

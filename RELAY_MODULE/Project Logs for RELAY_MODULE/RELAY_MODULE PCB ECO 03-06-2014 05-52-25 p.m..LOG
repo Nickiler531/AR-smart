@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=*1 NewDesignator=M1
+Change Component Designator: OldDesignator=*2 NewDesignator=M2
+Change Component Library : Designator=M1 Old Library=General.IntLib New Library=General.SchLib
+Change Component Library : Designator=M2 Old Library=General.IntLib New Library=General.SchLib
+Added Member To Class: ClassName=RELAY_MODULE Member=Component M1 MountingHole-1/8in

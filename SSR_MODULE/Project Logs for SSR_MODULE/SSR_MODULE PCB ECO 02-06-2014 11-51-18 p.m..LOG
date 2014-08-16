@@ -1,0 +1,7 @@
+Change Component Comment : Designator=D1 Old Comment=RED New Comment=Green
+Added Component: Designator=*1(MoutingHole-1/8in)
+Added Component: Designator=*2(MoutingHole-1/8in)
+Added Component: Designator=LOGO1(DeepSea_logo1)
+Added Member To Class: ClassName=SSR_MODULE Member=Component *1 MountingHole-1/8in
+Added Member To Class: ClassName=SSR_MODULE Member=Component *2 MountingHole-1/8in
+Added Member To Class: ClassName=SSR_MODULE Member=Component LOGO1 Logo_DeepSea

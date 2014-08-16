@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [SSR_MODULE.PrjPCB]
+   Generated File[SSR_MODULE.TXT]
+   Generated File[SSR_MODULE.LDP]
+   Generated File[SSR_MODULE.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 04:09:58 p.m. On 03/06/2014

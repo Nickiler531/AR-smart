@@ -1,0 +1,5 @@
+Added Component: Designator=*(MoutingHole-1/8in)
+Added Component: Designator=*(MoutingHole-1/8in)
+Added Component: Designator=LOGO1(DeepSea_logo1)
+Added Member To Class: ClassName=RELAY_MODULE Member=Component * MountingHole-1/8in
+Added Member To Class: ClassName=RELAY_MODULE Member=Component LOGO1 Logo_DeepSea

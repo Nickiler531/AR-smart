@@ -1,0 +1,9 @@
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [DomOctopus.PrjPCB]
+
+
+Files Generated   : 0
+Documents Printed : 0
+
+Finished Output Generation At 12:13:06 p.m. On 09/06/2014

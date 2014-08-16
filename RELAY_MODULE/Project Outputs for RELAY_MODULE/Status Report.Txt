@@ -1,0 +1,11 @@
+Output: Simple BOM
+Type  : SimpleBOM
+From  : Variant [[No Variations]] of Project [RELAY_MODULE.PrjPCB]
+   Generated File[RELAY_MODULE.BOM]
+   Generated File[RELAY_MODULE.CSV]
+
+
+Files Generated   : 2
+Documents Printed : 0
+
+Finished Output Generation At 08:09:33 p.m. On 13/07/2014

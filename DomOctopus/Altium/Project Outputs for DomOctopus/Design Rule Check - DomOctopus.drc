@@ -1,0 +1,58 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Nick\Desktop\AR-smart\DomOctopus\DomOctopus.PcbDoc
+Date     : 05/06/2014
+Time     : 06:19:52 p.m.
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=7mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=7mil) (All),(All)
+   Violation between Via (2832mil,1990mil) Top Layer to Bottom Layer and 
+                     Pad D6-2(2772.48mil,1990mil)  Top Layer
+   Violation between Pad J1-2(2390.59mil,1485mil)  Bottom Layer and 
+                     Pad J1-1(2416.181mil,1485mil)  Bottom Layer
+   Violation between Pad J1-3(2365mil,1485mil)  Bottom Layer and 
+                     Pad J1-2(2390.59mil,1485mil)  Bottom Layer
+   Violation between Pad J1-4(2339.409mil,1485mil)  Bottom Layer and 
+                     Pad J1-3(2365mil,1485mil)  Bottom Layer
+   Violation between Pad J1-5(2313.819mil,1485mil)  Bottom Layer and 
+                     Pad J1-4(2339.409mil,1485mil)  Bottom Layer
+   Violation between Via (2269mil,2599mil) Top Layer to Bottom Layer and 
+                     Pad U2-4(2349.173mil,2671mil)  Bottom Layer
+   Violation between Via (2832mil,1990mil) Top Layer to Bottom Layer and 
+                     Pad R8-2(2772.48mil,1990mil)  Bottom Layer
+Rule Violations :7
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=20mil) (Preferred=15mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 7
+Time Elapsed        : 00:00:01

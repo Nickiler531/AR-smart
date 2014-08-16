@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=P1 Old DesignItemId=Header 3 New DesignItemId=Conn x 3
+Change Component Footprint: Designator=P1 Old Footprint=HDR1X3 New Footprint=conn x 3
+Change Component Comment : Designator=P1 Old Comment=Header 3 New Comment=Conn x 3
+Change Component Designator: OldDesignator=* NewDesignator=*1
+Change Component Designator: OldDesignator=* NewDesignator=*2

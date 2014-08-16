@@ -1,0 +1,81 @@
+Removed Pin From Net: NetName=LED1 Pin=U2-20
+Removed Pin From Net: NetName=LED2 Pin=U2-21
+Removed Pin From Net: NetName=LED3 Pin=U2-22
+Removed Pin From Net: NetName=LED4 Pin=U2-23
+Change Component Designator: OldDesignator=D1 NewDesignator=D2
+Change Component Designator: OldDesignator=D2 NewDesignator=D4
+Change Component Designator: OldDesignator=D3 NewDesignator=D5
+Change Component Designator: OldDesignator=D4 NewDesignator=D6
+Change Component Designator: OldDesignator=D5 NewDesignator=D7
+Change Component Designator: OldDesignator=R1 NewDesignator=R3
+Change Component Designator: OldDesignator=R2 NewDesignator=R4
+Change Component Designator: OldDesignator=R3 NewDesignator=R6
+Change Component Designator: OldDesignator=R4 NewDesignator=R7
+Change Component Designator: OldDesignator=R5 NewDesignator=R8
+Change Component Designator: OldDesignator=R6 NewDesignator=R9
+Change Component Designator: OldDesignator=R7 NewDesignator=R10
+Change Component Designator: OldDesignator=U1 NewDesignator=U2
+Change Component Designator: OldDesignator=U2 NewDesignator=U4
+Added Component: Designator=D1(R0603_N)
+Added Component: Designator=D3(R0603_N)
+Added Component: Designator=R1(R0603_N)
+Added Component: Designator=R2(R0603_N)
+Added Component: Designator=R5(R0603_N)
+Added Component: Designator=U1(RN42)
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=3V3 Pin=U1-11
+Added Pin To Net: NetName=GND Pin=U1-12
+Added Pin To Net: NetName=GND Pin=U1-28
+Added Pin To Net: NetName=GND Pin=U1-29
+Added Pin To Net: NetName=LED3 Pin=U4-1
+Added Pin To Net: NetName=LED4 Pin=U4-2
+Added Pin To Net: NetName=IO_1 Pin=U4-14
+Added Pin To Net: NetName=IO_2 Pin=U4-15
+Added Pin To Net: NetName=IO_3 Pin=U4-16
+Added Pin To Net: NetName=IO_4 Pin=U4-17
+Added Pin To Net: NetName=IO_5 Pin=U4-20
+Added Pin To Net: NetName=IO_6 Pin=U4-21
+Added Pin To Net: NetName=IO_7 Pin=U4-24
+Added Pin To Net: NetName=IO_8 Pin=U4-25
+Added Pin To Net: NetName=LED1 Pin=U4-43
+Added Pin To Net: NetName=LED2 Pin=U4-44
+Change Net Name : Old Net Name=NetD1_2 New Net Name=NetD2_2
+Change Net Name : Old Net Name=NetD2_2 New Net Name=NetD4_2
+Change Net Name : Old Net Name=NetD3_2 New Net Name=NetD5_2
+Change Net Name : Old Net Name=NetD4_2 New Net Name=NetD6_2
+Change Net Name : Old Net Name=NetD5_2 New Net Name=NetD7_2
+Change Net Name : Old Net Name=NetR1_2 New Net Name=NetR3_2
+Change Net Name : Old Net Name=NetR2_2 New Net Name=NetR4_2
+Added Pin To Net: NetName=BT_RX Pin=U1-14
+Added Pin To Net: NetName=BT_RX Pin=U4-22
+Added Net: Name=BT_RX
+Added Pin To Net: NetName=BT_TX Pin=U1-13
+Added Pin To Net: NetName=BT_TX Pin=U4-23
+Added Net: Name=BT_TX
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=U1-19
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R1-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD3_1 Pin=D3-1
+Added Pin To Net: NetName=NetD3_1 Pin=U1-21
+Added Net: Name=NetD3_1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=R2-2
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR5_1 Pin=U1-22
+Added Net: Name=NetR5_1
+Added Pin To Net: NetName=NetU1_15 Pin=U1-15
+Added Pin To Net: NetName=NetU1_15 Pin=U1-16
+Added Net: Name=NetU1_15
+Added Member To Class: ClassName=DomOctopus Member=Component D6 Green
+Added Member To Class: ClassName=DomOctopus Member=Component D7 Red
+Added Member To Class: ClassName=DomOctopus Member=Component R8 1K
+Added Member To Class: ClassName=DomOctopus Member=Component R9 1K
+Added Member To Class: ClassName=DomOctopus Member=Component R10 1K
+Added Member To Class: ClassName=DomOctopus Member=Component U4 ATXMEGA32A4U-AU

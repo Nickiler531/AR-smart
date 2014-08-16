@@ -1,0 +1,15 @@
+"Bill of Material for "
+"On 13/07/2014 at 08:09:33 p.m."
+
+"Comment","Pattern","Quantity","Components"
+
+"2N3904","TO-92A","1","Q1","NPN General Purpose Amplifier"
+"BLOCK_CONNx2","BLOCK_CONNX2","2","P2, P3","TERM BLOCK 5.08MM VERT 2POS PCB"
+"Conn x 3","conn x 3","1","P1","CONN HEADER VERT 3POS .100 TIN"
+"Diode 1N4001","DO-41","1","D3","1 Amp General Purpose Rectifier"
+"Green","R0603_L","1","D2",""
+"Logo_DeepSea","DeepSea_logo1","1","LOGO1",""
+"MountingHole-1/8in","MoutingHole-1/8in","2","M1, M2",""
+"R_SMD","R0603_L","3","R1, R2, R3",""
+"RED","R0603_L","1","D1",""
+"RELAY SPDT 5A 5V","RELAY","1","U1","RELAY GENERAL PURPOSE SPDT 5A 5V"

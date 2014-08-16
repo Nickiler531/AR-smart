@@ -1,0 +1,18 @@
+Field=Comment~String~Comment~128|Field=Description~String~Description~325|Field=Designator~String~Designator~152|Field=Footprint~String~Footprint~107|Field=LibRef~String~LibRef~128|Field=Quantity~Integer~Quantity~68|Field=Manufacturer Part Number 1~String~Manufacturer Part Number 1~169|Field=Supplier 1~String~Supplier 1~75|Field=Supplier Unit Price 1~Float~Supplier Unit Price 1~127|Field=Supplier Subtotal 1~Float~Supplier Subtotal 1~122|ReportField=Currency~<none>|ReportField=ProductionQuantity~4|ReportField=ProjectFileName~DomOctopus.PrjPCB|ReportField=ProjectFullPath~C:\Users\Nick\Desktop\AR-smart\DomOctopus\DomOctopus.PrjPCB|ReportField=Title~Bill of Materials For Project [DomOctopus.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~40|ReportField=ReportTime~12:11:10 p.m.|ReportField=ReportDate~09/06/2014|ReportField=ReportDateTime~09/06/2014 12:11:10 p.m.|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~09/06/2014|ReportField=CurrentTime~11:59:00 a.m.|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\Nick\Desktop\AR-smart\DomOctopus\DomOctopus.SchDoc|ReportField=DocumentName~DomOctopus.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~05/06/2014|ReportField=Organization~|ReportField=ProjectName~DomOctopus.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~DomOctopus.PrjPCB|ReportField=DataSourceFullPath~C:\Users\Nick\Desktop\AR-smart\DomOctopus\DomOctopus.PrjPCB|ReportField=PCBDataSourceFileName~DomOctopus.PcbDoc|ReportField=PCBDataSourceFullPath~C:\Users\Nick\Desktop\AR-smart\DomOctopus\DomOctopus.PcbDoc
+0.1uF||C1, C4, C5, C6, C7, C8|C0603_N|C_SMD|6||||
+10uF||C2, C3|C_TANT_A_3216_N|CP_SMD|2||||
+Green||D1, D4, D5|R0603_N|LED_SMD|3||||
+Red||D2, D6|R0603_N|LED_SMD|2||||
+Blue||D3|R0603_N|LED_SMD|1||||
+MICRO_USB|CONN USB MICRO B RECPT SMT R/A|J1|USB_MICRO_SMD|MICRO_USB|1|10118194-0001LF|Digi-Key|0,46|1,84
+Logo_DeepSea||LOGO1|DeepSea_logo1|Logo_DeepSea|1||||
+MountingHole-1/8in||M1, M2|MoutingHole-1/8in|MountingHole-1/8in|2||||
+Conn x 3|CONN HEADER VERT 3POS .100 TIN|P1, P2, P4, P5, P7, P8, P9, P10|conn x 3|Conn x 3|8|640456-3|Digi-Key|0,18|5,92
+Header 3X2|Header, 3-Pin, Dual row|P3|HDR2X3|Header 3X2|1||||
+Header 2X2|Header, 2-Pin, Dual row|P6|HDR2X2|Header 2X2|1||||
+1K||R1, R2, R4, R5, R6, R7, R8|R0603_N|R_SMD|7||||
+10K||R3|R0603_N|R_SMD|1||||
+SWITCH|SWITCH TACTILE SPST-NO 0.05A 12V|SW1|swich_foot|SWITCH|1|FSM4JSMATR|Digi-Key|0,23|0,92
+BLUETOOTH RN42-I/RM|MODULE BLUETOOTH V2.1+EDR|U1|RN42|BLUETOOTH RN42-I/RM|1|RN42-I/RM|Digi-Key|18,32|73,28
+LM1117MPX-1.8/NOPB|800mA Low-Dropout Linear Regulator, 4-pin SOT-223, Pb-Free|U2|MP04A_N|LM1117MPX-1.8/NOPB|1|Loading...|Digi-Key||
+ATXMEGA32A4U-AU|IC MCU 8BIT 32KB FLASH 44TQFP|U3|44A_M|ATXMEGA32A4U-AU|1|ATXMEGA32A4U-AU|Digi-Key|4,06|16,24

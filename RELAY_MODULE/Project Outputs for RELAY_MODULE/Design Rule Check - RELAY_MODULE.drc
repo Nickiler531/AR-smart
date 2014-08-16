@@ -1,0 +1,62 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Nick\Desktop\AR-smart\RELAY_MODULE\RELAY_MODULE.PcbDoc
+Date     : 03/06/2014
+Time     : 03:56:53 p.m.
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Violation between Text "P2" (4385mil,2805mil)  Top Overlay and 
+                     Track (4393.661mil,2666.102mil)(4393.661mil,3105.079mil)  Top Overlay
+   Violation between Text "P3" (4385mil,2380mil)  Top Overlay and 
+                     Track (4393.661mil,2266.102mil)(4393.661mil,2705.079mil)  Top Overlay
+   Violation between Text "P2" (4385mil,2805mil)  Top Overlay and 
+                     Track (4338.307mil,2260.197mil)(4338.307mil,3055.472mil)  Top Overlay
+   Violation between Text "P3" (4385mil,2380mil)  Top Overlay and 
+                     Track (4338.307mil,2260.197mil)(4338.307mil,3055.472mil)  Top Overlay
+Rule Violations :4
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+   Violation between Track (4142.441mil,2479.685mil)(4208.386mil,2479.685mil)  Top Overlay and 
+                     Pad U1-4(4267.441mil,2479.685mil)  Multi-Layer
+   Violation between Track (3726.102mil,3094.843mil)(4298.937mil,3094.843mil)  Top Overlay and 
+                     Pad U1-1(4031.22mil,3038.74mil)  Multi-Layer
+Rule Violations :2
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Pad Q1-2(3605mil,3005mil)  Multi-Layer and 
+                     Pad Q1-3(3605mil,3055mil)  Multi-Layer
+   Violation between Pad Q1-1(3605mil,2955mil)  Multi-Layer and 
+                     Pad Q1-2(3605mil,3005mil)  Multi-Layer
+Rule Violations :2
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+   Violation between Hole Size Constraint (125mil > 100mil) : Pad *-0(3590mil,2360mil)  Multi-Layer
+   Violation between Hole Size Constraint (125mil > 100mil) : Pad *-0(4540mil,3210mil)  Multi-Layer
+Rule Violations :2
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=25mil) (Preferred=15mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 10
+Time Elapsed        : 00:00:01

@@ -31,11 +31,12 @@
 #define CONTACTOR IO_1
 #define DIMMER_TRIGGER IO_7
  
-int dimmer=0;
-int i=0;
+
+int FlagDimmer=0;
+
 ISR(PORTD_INT0_vect) // ZCD
 {
-	//while( (RTC.STATUS&0x01) && 0x01 );
+	while( (RTC.STATUS&0x01) && 0x01 );
 	RTC.CNT = 0;
 	led4(TOGGLE);
 }
@@ -47,11 +48,33 @@ ISR(PORTC_INT0_vect) // BOTON
 
 ISR(RTC_COMP_vect)
 {
-	ioport_set_pin_level(DIMMER_TRIGGER, ON);
-	led3(TOGGLE);
-	delay_us(200);
-	ioport_set_pin_level(DIMMER_TRIGGER, OFF);
+	while( (RTC.STATUS&0x01) && 0x01 );
+	volatile int val = RTC.COMP;
+	if(FlagDimmer==OFF)
+	{
+		ioport_set_pin_level(DIMMER_TRIGGER, OFF);
+	}
+	else if(FlagDimmer==ON)
+	{
+		ioport_set_pin_level(DIMMER_TRIGGER, ON);
+	}
+	else
+	{
+		ioport_set_pin_level(DIMMER_TRIGGER, ON);
+		led3(TOGGLE);
+		delay_us(200);
+		ioport_set_pin_level(DIMMER_TRIGGER, OFF);
+	}
 }
+
+//Asignación de variables a los posibles pines. Si hay un cambio de pines solo se cambia en esta planilla
+#define COMMAND_T IO_1
+#define COMMAND_C IO_2
+#define COMMAND_A IO_3
+#define COMMAND_M IO_4
+#define COMMAND_O IO_5
+
+
 
 int main (void)
 {
@@ -86,62 +109,88 @@ int main (void)
 	
 	char command;
 	int value;
-	for(;;)
-	{
-// 		while (bluetooth_is_rx_complete()==0);
-// 		scanf("%3d",&value);
-// 		while( (RTC.STATUS&0x01) && 0x01 );
-// 		RTC.COMP=value;
-// 		led1(TOGGLE);
-	}
-// 	for(;;)
-// 	{
-// 		scanf("%1c%d",&command,&value);
-// 		switch (command)
-// 		{
-// 		case 'C':
-// 			if (value==1)
-// 			{
-// 				led1(ON);
-// 				ioport_set_pin_level(IO_1,ON);
-// 			}
-// 			else
-// 			{
-// 				led1(OFF);
-// 				ioport_set_pin_level(IO_1,OFF);
-// 			}
-// 		break;
-// 		case 'T':
-// 			if (value==1)
-// 			{
-// 				led2(ON);
-// 				ioport_set_pin_level(IO_2,ON);
-// 			}
-// 			else
-// 			{
-// 				led2(OFF);
-// 				ioport_set_pin_level(IO_2,OFF);
-// 			}
-// 		break;
-// 		case 'D':
-// 			RTC.COMP=value;
-// 		break;
-// 		case 'O':
-// 			if (value==1)
-// 			{
-// 				led3(ON);
-// 				ioport_set_pin_level(IO_3,ON);
-// 			}
-// 			else
-// 			{
-// 				led3(OFF);
-// 				ioport_set_pin_level(IO_3,OFF);
-// 			}
-// 		break;
-// 		default:
-// 			led4(TOGGLE);
-// 		break;
-// 		}
-// 	}
+ 	for(;;)
+ 	{
+		while (bluetooth_is_rx_complete()==0); 
+ 		scanf("%1c%d",&command,&value);
+ 		switch (command)
+ 		{
+ 		case 'C': // Puerta Principal. Tiene que prenderse tener un retardo y luego apagarse.
+ 			if (value==1)
+ 			{
+ 				ioport_set_pin_level(COMMAND_C,ON);
+				delay_s(2);
+				ioport_set_pin_level(COMMAND_C,OFF);
+ 			}
+ 		break;
+ 		case 'T': // Tacos principales
+ 			if (value==1)
+ 			{
+ 				ioport_set_pin_level(COMMAND_T,ON);
+ 			}
+ 			else
+ 			{
+ 				ioport_set_pin_level(COMMAND_T,OFF);
+ 			}
+ 		break;
+ 		case 'D': // dimmer
+			if(value == 160)
+			{
+				while( (RTC.STATUS&0x01) && 0x01 );
+				RTC.COMP=500;
+				ioport_set_pin_level(DIMMER_TRIGGER,ON);
+				FlagDimmer=ON;
+			}
+			else if (value == 500)
+			{
+				while( (RTC.STATUS&0x01) && 0x01 );
+				RTC.COMP=500;
+				ioport_set_pin_level(DIMMER_TRIGGER,OFF);
+				FlagDimmer=OFF;
+				
+			}
+			else
+			{
+ 				while( (RTC.STATUS&0x01) && 0x01 );
+				RTC.COMP=value;
+				FlagDimmer=2;
+			}
+ 		break;
+ 		case 'O': // Luces On OFF
+ 			if (value==1)
+ 			{
+ 				ioport_set_pin_level(COMMAND_O,ON);
+ 			}
+ 			else
+ 			{
+ 				ioport_set_pin_level(COMMAND_O,OFF);
+ 			}
+ 		break;
+		case 'A': //Aire Acondicionado
+			if (value==1)
+			{
+				ioport_set_pin_level(COMMAND_A,ON);
+			}
+			else
+			{
+				ioport_set_pin_level(COMMAND_A,OFF);
+			}
+		break;
+		case 'M': //Tomacorriente
+		if (value==1)
+			{
+				ioport_set_pin_level(COMMAND_M,ON);
+			}
+			else
+			{
+				ioport_set_pin_level(COMMAND_M,OFF);
+			}
+		break;
+		
+ 		default:
+ 			led1(TOGGLE);
+ 		break;
+ 		}
+ 	}
 }
 

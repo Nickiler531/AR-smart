@@ -1,0 +1,1 @@
+15/10/2014	Compra de componentes para prueba IR. Programacion de test. Señal reconocida en el micro satisfactoriamente. Falta osciloscopio para seguir probando
